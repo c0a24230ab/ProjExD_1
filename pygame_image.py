@@ -23,6 +23,9 @@ def main():
         screen.blit(bg_img_flip,[-x+1600,0]) #練習７
         screen.blit(bg_img,[-x+3200,0])
         screen.blit(kk_img,[300,200]) #練習４
+
+        kk_rct = kk_img.get_rect()
+
         pg.display.update()
         tmr += 1        
         clock.tick(200) #練習５
