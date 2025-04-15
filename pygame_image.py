@@ -25,6 +25,7 @@ def main():
         screen.blit(kk_img,[300,200]) #練習４
 
         kk_rct = kk_img.get_rect()
+        kk_rct.center = 300,200
 
         pg.display.update()
         tmr += 1        
