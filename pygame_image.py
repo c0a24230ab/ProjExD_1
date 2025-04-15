@@ -26,7 +26,8 @@ def main():
         screen.blit(bg_img,[-x, 0])
         screen.blit(bg_img_flip,[-x+1600,0]) #練習７
         screen.blit(bg_img,[-x+3200,0])
-
+        
+        kk_rct.move_ip((-1,0))
 
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
@@ -39,12 +40,13 @@ def main():
             kk_rct.move_ip((-1,0))
 
         if key_lst[pg.K_RIGHT]:
-            kk_rct.move_ip((1,0))
+            kk_rct.move_ip((1,0)) #練習１０
         screen.blit(kk_img,kk_rct) #練習４
         
         pg.display.update()
         tmr += 1
         clock.tick(200) #練習５
+
 
 
 if __name__ == "__main__":
